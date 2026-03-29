@@ -3,8 +3,8 @@ setlocal
 cd /d %~dp0
 
 :: 対応する本体バージョン.pXX
-set VERSION=2.4.1.p0
-set APP_NAME=JapaneseFontLibraryPatch
+set VERSION=2.4.1.p2
+set APP_NAME=JapaneseFontLibrary-Patch
 set BUILD_DIR=dist
 
 :: --- 設定エリア ---
@@ -17,7 +17,7 @@ set TARGETS="assets" "data" "docs" "fomod" "LICENSE" "README.md" "readme.txt"
 
 :: 除外したいファイル（もしあれば）
 :: 例: *.pdb (デバッグファイル) や thumbs.db など
-:: set EXCLUDE=-x!*.pdb -x!thumbs.db
+set EXCLUDE=-xr!*.xcf -xr!eyecatch_*.* -xr!*.tmp -xr!.git-keep
 :: -----------------
 
 echo [配布用のFomodインストーラーのビルドを開始します]
