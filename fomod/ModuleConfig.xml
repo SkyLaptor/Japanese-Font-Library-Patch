@@ -91,6 +91,33 @@ map "$MCMBoldFont" = "フォント名" Normal</description>
               </typeDescriptor>
             </plugin>
 
+            <plugin name="SkyUI-SE v6.8用">
+              <description>SkyUIのMCM画面が使用するフォントマップを変更するパッチです。
+対象MOD: https://www.nexusmods.com/skyrimspecialedition/mods/12604 v6.8
+例えば幅が狭いフォントをMCM画面だけに適用したい時など、通常のフォントと分けたい場合に使用してください。
+
+注意：MCMが使用するフォントマップを変更しますので、必ずfontconfig.txtに以下のフォントマップが適切に設定されていることを確認して下さい。
+map "$MCMFont" = "フォント名" Normal
+map "$MCMMediumFont" = "フォント名" Normal
+map "$MCMBoldFont" = "フォント名" Normal</description>
+              <files>
+                <folder source="data/patches/skyui-mcmsf/skyui6.8se" destination="" priority="0" />
+              </files>
+              <typeDescriptor>
+                  <dependencyType>
+                    <defaultType name="Optional" />
+                    <patterns>
+                      <pattern>
+                        <dependencies operator="And">
+                          <fileDependency file="SkyUI_SE.esp" state="Active" />
+                        </dependencies>
+                        <type name="Recommended" />
+                        </pattern>
+                    </patterns>
+                  </dependencyType>
+              </typeDescriptor>
+            </plugin>
+
           </plugins>
         </group>
       </optionalFileGroups>
