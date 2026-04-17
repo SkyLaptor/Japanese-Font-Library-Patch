@@ -3,7 +3,7 @@ setlocal
 cd /d %~dp0
 
 :: 対応する本体バージョン.pXX
-set VERSION=2.4.1.p3
+set VERSION=2.4.1.p4
 set APP_NAME=JapaneseFontLibrary-Patch
 set BUILD_DIR=dist
 

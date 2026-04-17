@@ -4,6 +4,105 @@
 
   <installSteps order="Explicit">
 
+    <!-- バグ修正 -->
+    <installStep name="バグ修正">
+      <optionalFileGroups order="Explicit">
+        <group name="Racemenuでキャラ名に日本語が使用できない問題" type="SelectAtMostOne">
+          <plugins>
+
+            <plugin name="しねきゃぷしょん 幅50%">
+              <description>しねきゃぷしょんプリセットで幅50%オプション使用選択時のバグを修正します。</description>
+              <files>
+                <file source="data/bugfixes/fontconfigs/lorefriendly_w50.txt" destination="Interface/fontconfig.txt" priority="0" />
+                <file source="data/bugfixes/fontconfigs/lorefriendly_w50.txt" destination="Interface/fontconfig_ja.txt" priority="0" />
+              </files>
+              <typeDescriptor>
+                  <type name="Optional" />
+              </typeDescriptor>
+            </plugin>
+            
+            <plugin name="しねきゃぷしょん 幅70%">
+              <description>しねきゃぷしょんプリセットで幅70%オプション使用選択時のバグを修正します。</description>
+              <files>
+                <file source="data/bugfixes/fontconfigs/lorefriendly_w70.txt" destination="Interface/fontconfig.txt" priority="0" />
+                <file source="data/bugfixes/fontconfigs/lorefriendly_w70.txt" destination="Interface/fontconfig_ja.txt" priority="0" />
+              </files>
+              <typeDescriptor>
+                  <type name="Optional" />
+              </typeDescriptor>
+            </plugin>
+
+            <plugin name="モダン 幅50%">
+              <description>モダンプリセットで幅50%オプション使用選択時のバグを修正します。</description>
+              <files>
+                <file source="data/bugfixes/fontconfigs/modern_w50.txt" destination="Interface/fontconfig.txt" priority="0" />
+                <file source="data/bugfixes/fontconfigs/modern_w50.txt" destination="Interface/fontconfig_ja.txt" priority="0" />
+              </files>
+              <typeDescriptor>
+                  <type name="Optional" />
+              </typeDescriptor>
+            </plugin>
+
+            <plugin name="モダン 幅70%">
+              <description>モダンプリセットで幅70%オプション使用選択時のバグを修正します。</description>
+              <files>
+                <file source="data/bugfixes/fontconfigs/modern_w70.txt" destination="Interface/fontconfig.txt" priority="0" />
+                <file source="data/bugfixes/fontconfigs/modern_w70.txt" destination="Interface/fontconfig_ja.txt" priority="0" />
+              </files>
+              <typeDescriptor>
+                  <type name="Optional" />
+              </typeDescriptor>
+            </plugin>
+
+            <plugin name="スカイリム互換 幅50%">
+              <description>スカイリム互換プリセットで幅50%オプション使用選択時のバグを修正します。</description>
+              <files>
+                <file source="data/bugfixes/fontconfigs/skyrim_w50.txt" destination="Interface/fontconfig.txt" priority="0" />
+                <file source="data/bugfixes/fontconfigs/skyrim_w50.txt" destination="Interface/fontconfig_ja.txt" priority="0" />
+              </files>
+              <typeDescriptor>
+                  <type name="Optional" />
+              </typeDescriptor>
+            </plugin>
+
+            <plugin name="スカイリム互換 幅70%">
+              <description>スカイリム互換プリセットで幅70%オプション使用選択時のバグを修正します。</description>
+              <files>
+                <file source="data/bugfixes/fontconfigs/skyrim_w70.txt" destination="Interface/fontconfig.txt" priority="0" />
+                <file source="data/bugfixes/fontconfigs/skyrim_w70.txt" destination="Interface/fontconfig_ja.txt" priority="0" />
+              </files>
+              <typeDescriptor>
+                  <type name="Optional" />
+              </typeDescriptor>
+            </plugin>
+
+            <plugin name="スムーズスカイリム 幅50%">
+              <description>スカイリム互換プリセットで幅50%オプション使用選択時のバグを修正します。</description>
+              <files>
+                <file source="data/bugfixes/fontconfigs/smoothskyrim_w50.txt" destination="Interface/fontconfig.txt" priority="0" />
+                <file source="data/bugfixes/fontconfigs/smoothskyrim_w50.txt" destination="Interface/fontconfig_ja.txt" priority="0" />
+              </files>
+              <typeDescriptor>
+                  <type name="Optional" />
+              </typeDescriptor>
+            </plugin>
+
+            <plugin name="スムーズスカイリム 幅70%">
+              <description>スカイリム互換プリセットで幅70%オプション使用選択時のバグを修正します。</description>
+              <files>
+                <file source="data/bugfixes/fontconfigs/smoothskyrim_w70.txt" destination="Interface/fontconfig.txt" priority="0" />
+                <file source="data/bugfixes/fontconfigs/smoothskyrim_w70.txt" destination="Interface/fontconfig_ja.txt" priority="0" />
+              </files>
+              <typeDescriptor>
+                  <type name="Optional" />
+              </typeDescriptor>
+            </plugin>
+
+          </plugins>
+        </group>
+      </optionalFileGroups>
+    </installStep>
+
     <!-- SkyUI -->
     <installStep name="SkyUI">
       <optionalFileGroups order="Explicit">
@@ -31,7 +130,7 @@ map "$MCMBoldFont" = "フォント名" Normal</description>
                           <fileDependency file="SkyUI.esp" state="Active" />
                         </dependencies>
                         <type name="Recommended" />
-                        </pattern>
+                      </pattern>
                     </patterns>
                   </dependencyType>
               </typeDescriptor>
@@ -58,7 +157,7 @@ map "$MCMBoldFont" = "フォント名" Normal</description>
                           <fileDependency file="SkyUI_SE.esp" state="Active" />
                         </dependencies>
                         <type name="Recommended" />
-                        </pattern>
+                      </pattern>
                     </patterns>
                   </dependencyType>
               </typeDescriptor>
@@ -85,7 +184,7 @@ map "$MCMBoldFont" = "フォント名" Normal</description>
                           <fileDependency file="SkyUI_SE.esp" state="Active" />
                         </dependencies>
                         <type name="Recommended" />
-                        </pattern>
+                      </pattern>
                     </patterns>
                   </dependencyType>
               </typeDescriptor>
@@ -112,7 +211,7 @@ map "$MCMBoldFont" = "フォント名" Normal</description>
                           <fileDependency file="SkyUI_SE.esp" state="Active" />
                         </dependencies>
                         <type name="Recommended" />
-                        </pattern>
+                      </pattern>
                     </patterns>
                   </dependencyType>
               </typeDescriptor>
