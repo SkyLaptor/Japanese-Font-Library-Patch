@@ -7,11 +7,12 @@
     <!-- バグ修正 -->
     <installStep name="バグ修正">
       <optionalFileGroups order="Explicit">
-        <group name="Racemenuでキャラ名に日本語が使用できない問題" type="SelectAtMostOne">
+        <group name="プリセット設定" type="SelectAtMostOne">
           <plugins>
 
             <plugin name="ロアフレンドリー 幅50%">
-              <description>ロアフレンドリープリセットで幅50%オプション使用選択時のバグを修正します。</description>
+              <description>ロアフレンドリープリセットで幅50%オプション使用時の以下のバグを修正します。
+・Racemenuで日本語名を使おうとした場合に先に進めなくなる。</description>
               <files>
                 <file source="data/bugfixes/fontconfigs/lorefriendly_w50.txt" destination="Interface/fontconfig.txt" priority="0" />
                 <file source="data/bugfixes/fontconfigs/lorefriendly_w50.txt" destination="Interface/fontconfig_ja.txt" priority="0" />
@@ -22,7 +23,8 @@
             </plugin>
             
             <plugin name="ロアフレンドリー 幅70%">
-              <description>ロアフレンドリープリセットで幅70%オプション使用選択時のバグを修正します。</description>
+              <description>ロアフレンドリープリセットで幅70%オプション使用時の以下のバグを修正します。
+・Racemenuで日本語名を使おうとした場合に先に進めなくなる。</description>
               <files>
                 <file source="data/bugfixes/fontconfigs/lorefriendly_w70.txt" destination="Interface/fontconfig.txt" priority="0" />
                 <file source="data/bugfixes/fontconfigs/lorefriendly_w70.txt" destination="Interface/fontconfig_ja.txt" priority="0" />
@@ -33,7 +35,8 @@
             </plugin>
 
             <plugin name="モダン 幅50%">
-              <description>モダンプリセットで幅50%オプション使用選択時のバグを修正します。</description>
+              <description>モダンプリセットで幅50%オプション使用時の以下のバグを修正します。
+・Racemenuで日本語名を使おうとした場合に先に進めなくなる。</description>
               <files>
                 <file source="data/bugfixes/fontconfigs/modern_w50.txt" destination="Interface/fontconfig.txt" priority="0" />
                 <file source="data/bugfixes/fontconfigs/modern_w50.txt" destination="Interface/fontconfig_ja.txt" priority="0" />
@@ -44,7 +47,8 @@
             </plugin>
 
             <plugin name="モダン 幅70%">
-              <description>モダンプリセットで幅70%オプション使用選択時のバグを修正します。</description>
+              <description>モダンプリセットで幅70%オプション使用時の以下のバグを修正します。
+・Racemenuで日本語名を使おうとした場合に先に進めなくなる。</description>
               <files>
                 <file source="data/bugfixes/fontconfigs/modern_w70.txt" destination="Interface/fontconfig.txt" priority="0" />
                 <file source="data/bugfixes/fontconfigs/modern_w70.txt" destination="Interface/fontconfig_ja.txt" priority="0" />
@@ -55,7 +59,8 @@
             </plugin>
 
             <plugin name="スカイリム 幅50%">
-              <description>スカイリムプリセットで幅50%オプション使用選択時のバグを修正します。</description>
+              <description>スカイリムプリセットで幅50%オプション使用時の以下のバグを修正します。
+・Racemenuで日本語名を使おうとした場合に先に進めなくなる。</description>
               <files>
                 <file source="data/bugfixes/fontconfigs/skyrim_w50.txt" destination="Interface/fontconfig.txt" priority="0" />
                 <file source="data/bugfixes/fontconfigs/skyrim_w50.txt" destination="Interface/fontconfig_ja.txt" priority="0" />
@@ -66,7 +71,8 @@
             </plugin>
 
             <plugin name="スカイリム 幅70%">
-              <description>スカイリムプリセットで幅70%オプション使用選択時のバグを修正します。</description>
+              <description>スカイリムプリセットで幅70%オプション使用時の以下のバグを修正します。
+・Racemenuで日本語名を使おうとした場合に先に進めなくなる。</description>
               <files>
                 <file source="data/bugfixes/fontconfigs/skyrim_w70.txt" destination="Interface/fontconfig.txt" priority="0" />
                 <file source="data/bugfixes/fontconfigs/skyrim_w70.txt" destination="Interface/fontconfig_ja.txt" priority="0" />
@@ -77,7 +83,8 @@
             </plugin>
 
             <plugin name="スムーズスカイリム 幅50%">
-              <description>スカイリム互換プリセットで幅50%オプション使用選択時のバグを修正します。</description>
+              <description>スムーズスカイリムプリセットで幅50%オプション使用時の以下のバグを修正します。
+・Racemenuで日本語名を使おうとした場合に先に進めなくなる。</description>
               <files>
                 <file source="data/bugfixes/fontconfigs/smoothskyrim_w50.txt" destination="Interface/fontconfig.txt" priority="0" />
                 <file source="data/bugfixes/fontconfigs/smoothskyrim_w50.txt" destination="Interface/fontconfig_ja.txt" priority="0" />
@@ -88,7 +95,8 @@
             </plugin>
 
             <plugin name="スムーズスカイリム 幅70%">
-              <description>スカイリム互換プリセットで幅70%オプション使用選択時のバグを修正します。</description>
+              <description>スムーズスカイリムプリセットで幅70%オプション使用時の以下のバグを修正します。
+・Racemenuで日本語名を使おうとした場合に先に進めなくなる。</description>
               <files>
                 <file source="data/bugfixes/fontconfigs/smoothskyrim_w70.txt" destination="Interface/fontconfig.txt" priority="0" />
                 <file source="data/bugfixes/fontconfigs/smoothskyrim_w70.txt" destination="Interface/fontconfig_ja.txt" priority="0" />
@@ -106,7 +114,7 @@
     <!-- SkyUI -->
     <installStep name="SkyUI">
       <optionalFileGroups order="Explicit">
-        <group name="SkyUI用MCM専用フォントマップ" type="SelectAtMostOne">
+        <group name="SkyUI用MCM専用フォントマップオプション" type="SelectAtMostOne">
           <plugins>
 
             <plugin name="SkyUI v5.1用">
